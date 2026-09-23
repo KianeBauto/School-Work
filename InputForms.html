@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+    <head>
+              <title>Tables</title>
+    </head>
+    <form>
+        <center>
+            <table border = "1" width = "70%"</table>
+
+                <thead>
+                    <tr>
+
+
+                    </tr>
+            
+          </center>
+
+    </form>
+    <center>
+        <th>
+        <label for="basic-text">Text Input:</label> <br>
+        <input type = "text" id = "basic-text" name = "basic-text" placeholder="Enter plain text" maxlength = "50">
+        
+
+                <p>
+                <label for="user-password">Password Input:</label> <br>
+                <input type="password" id="user-password" name="user-password" placeholder="Enter Password" required>
+                </p>
+
+
+        </th>
+
+
+        <th>
+
+            <p>
+                <label for="user-email" email=>Input Email:</label><br>
+                <input type="email" id="user-email" name ="user-email" placeholder="user@example.com" multiple> <br>
+
+              <br>  <label for="user-url">URL Input:</label> <br>
+                <input type="url" id="user-url" name="user-url" placeholder="https://example.com">
+            </p>
+
+        </th>
+        <th>
+                <p>
+                    <label for="user-tel">Telephone Input:</label>
+                    <input type="tel" id="user-tel" name="user-tel"placeholder="123-456-7890" pattern="[0-0]{3}-[0-9]{3}[0-9]{3}-[0-9]{4}"> <br>
+
+                   <br> <label for="site-search">Search Input</label>
+                    <input type="search" id="site-search" name="site-search" placeholder="Seach site...">
+                </p>
+        </th>
+</thead>
+<thead>
+        <th>
+
+                <p>
+                    <label for="user-bio">Text Area:(Multi-line text)</label><br>
+                    <textarea id= "user-bio" name="user-bio" rows="4" cols="50"placeholder="Type your biography here..."></textarea> <br>
+                    <legend>Numerical & amp;Range</legend>
+
+                    <label for="user-age">Number Input:</label>
+                    <input type="number" id="user-age" name="user-age" min="1" max="120" step="1" value="25">
+
+                </p>
+
+        </th>
+        
+        <th>
+
+                <p>
+                    <label for="volume level">Range Input(Slider)</label>
+                    <input type="range" id="volume-level" name="volume-level" min="0" max="100" step="5" value="50"><br>
+                    
+                    <label for="event-date">Data Input:</label>
+                    <input type="date" id="event-date" name="event-date" min="2020-01-01" max="2030-12-31">
+
+                </p>
+
+        </th>
+        
+        <th>
+
+            <p>
+
+                <label for="event-time">Time Input:</label>
+                <input type="time" id="event" name="event-time"><br>
+
+                <br><label for="event-datetime">Date&amp; Time Local Input:</label>
+                <input type="datetime-local" id="event-datetime" name="event-datetime">
+
+            </p>
+
+        </th>
+</thead>
+<thead>
+
+        <th>
+            <p>
+
+                <label for="card-expiry-month">Month Expiry:</label>
+                <input type="month" id="card" name="card-expiry-month"> <br>
+
+                <br><label for="project week">Week Input:</label>
+                <input type="week" id="project" name="project week"
+            </p>
+        </th>
+        <th>
+            <p>
+
+                <span>Hobbies(Multiple Checkbox)</span><br>
+                <input type="checkbox" id="hobby-reading" name="hobbies" value="reading">
+                <label for="hobby-reading">Reading</label>
+
+                <input type="checkbox" id="hobby-sports" name="hobbies" value="sports"
+                <label for="hobby-sports">Sports</label>
+                
+                <input type="checkbox" id="hobbycoding" nmae="hobbies" value="coding">
+                <label for="hobby-coding">Coding</label>
+            </p>
+         </th>
+         <th>
+            <p>
+
+                <span>Contact Preference(Radio buttons)</span><br>
+                <input type="radio" id="pref-email" name="contact-pref" value="email" checked>
+                <label for="pref-email">Email</label>
+
+                <input type="radio" id="pref-phone" name="contact-pref" value="phone">
+                <label for="pref-phone">Phone</label>
+
+                <input type="radio" id="pref-email" name="contact-pref" value="mail">
+                <label for="pref-mail">Mail</label>
+
+            </p>
+         </th>
+</thead>
+<thead>
+        <th>
+            <p>
+                <label for="country-select">Select Dropdown</label>
+                <select id="country-select" name="country-select">
+                <option value=""disabled selected>--Select a Country--</option>
+                <optgroup label= "North America">
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                </optgroup>
+                <optgroup label="Europe">
+                <option value="uk">United Kingdom</option>
+                <option value="fr">France</option>
+                </optgroup>
+                </select>
+            </p>
+        </th>
+        <th>
+            <p>
+                <label for="skill-select">Multiple Select Box:</label><br>
+                <select id="skill-select" name="skill-select" multiple size="4">
+                    <optgroup label="Languages">
+                    <option value="html">HTMl5</option>
+                    <option value="css">CSS3</option>
+                    <option value="js">JavaScript</option>
+                    <option value="sql">SQL</option>
+                    </optgroup>
+                </select>
+            </p>
+
+        </th>
+        <th>
+            <p>
+                <label for="browser-choice">Datalist Input(Auto Completion)</label>
+                <input list="browsers" id="browser-choice" name="browser-choice"placeholder="Type or choose a browser">
+                <datalist id="browsers">
+                <option value="Google chrome"></option>
+                <option value="Mozilla Fire Fox"></option>
+                <option value="Apple Safari"></option>
+                <option value="Microsoft Edge"></option>
+                <option value="Brave"></option>
+            </datalist>
+            </fieldset>
+            </p>
+        </th>
+</thead>
+<thead>
+    <th>
+        <p>
+            <label for="user-avatar">File Input(Single/Multiple)</label>
+            <input type="file" id="user-avatar" name="user-avatar" accept="image/*,.pdf" multiple>
+        </p>
+    </th>
+    <th>
+        <p>
+            <label for="fav-color">Color Picker Input</label>
+            <input type="color" id="fav-color" name="fav-color" value="#ff0000">
+        </p>
+    </th>
+    <th>
+        <p>
+            <input type="hidden" user="user-id" name="user-id" value="102938">
+        </p>
+        <p>
+            <label for="num-a">A:</label>
+            <input type="number" id="num-a" value ="10"> +
+            <label for="num-b">B:</label>
+            <input type="number" id="num-b" value="20"> =
+            <output name="result"for=num-a num-b">30</output>
+        </p>
+    </th>
+
+<thead>
+    <th>
+        <p>
+            <label for="disk-usage">Meter Element(Disk Usage)</label>
+            <meter id="disk-usage" min="0"max="100"low="33"high="66" optimum="80"value="75">75%</meter>
+        </p>
+    </th>
+    <th>
+        <p>
+            <label for="file-progress">Progress Element</label>
+            <progress id="file-progress" max="100" min="60">60%</progress>
+        </p>
+    </th>
+    <th>
+        <p>
+            <input type="submit" value="Submit Input Button">
+             <input type="reset"value ="Reset Input Button">
+             <input type="button" value="Plain Input Button" onclick="alert(Button Clicked!)">
+
+        </p>
+    </th>
+</thead>
+<thead>
+    <th>
+    <p>
+        <label for="img-submit">Image Submit Button</label><br>
+        <input type="image" id="img-submit" src="https://placehold.co/100x35/000000/FFFFFF?text=Submit" alt="Submit Image Button">
+    </p>
+    </th>
+    <th>
+        <p>
+            <button type="submit"><strong>Submit</strong>Buttong Tag</button>
+            <button type="reset"><em>Reset</em>Button Tag</button>
+            <button type="button">Custom<span>Button Tag</span></button>
+        </p>
+    </th>
+    <th>
+        <p>
+            <a href="https://youtu.be/QDia3e12czc?si=m_Ta2IY6ITlXA2JF"
+            <text>Click For Free Money</text>
+        </p>
+    </th>
+</thead>
+</thead>
+    </center>
+</body>
+</html>
