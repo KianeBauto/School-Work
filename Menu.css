@@ -1,0 +1,63 @@
+/* Navigation Bar Color and Design */
+    .navbar { 
+    background-color: #2e1236;                             /* Gives the background color to the bar  */
+    width: 100%;                                             /* Width of the navigation bar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);              /* Adds shadow to the bar */
+} 
+/* Design for the Navigation List */
+.nav-list { 
+    display: flex;                                             /* When applied becomes flex container(parent) and all of direct children becomes flex items */       
+    flex-direction: row;                                       /* Defines the flex and what type of direction */
+    justify-content: flex-start;                               /* Aligns flex items at the beginning */
+    align-items: center;                                       /* Centers the items */
+    list-style-type: none;                                     /* Removes the default marker(bullet or numbers) */
+    margin: 0;                                                 /* Removes the default margin */
+    padding: 0;                                                /* Removes the default padding */
+}
+
+    /* Navigation Links Design */
+    .nav-link {  
+    display: block;                                          /* Changes rendering block to block-level element */           
+    padding: 14px 20px;                                      /* Padding inside of the link */ 
+    color: #94A3B8;                                        /* Color of the text */
+    text-decoration: none;                                   /* Removes the underline below the hyperlink */
+    font-family: 'Segoe UI', sans-serif;                     /* Fonts used for the text */
+    font-size: 15px;                                         /* Size of the font */
+    font-weight: 600;                                        /* Thickness of the font */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+}
+/* Navigation Link cursor hover */
+    .nav-link:hover { 
+    background-color: #611f6e;                              /* Color of the background when hovered over */
+    color: #E2E8F0;                                         /* Color of the text when hovered on */
+}
+
+/* Changes the Navigation Link when it is active */
+.nav-link:link { 
+    color: #94A3B8;                                         /* Color of the text when the link is active */
+}
+/* Changes the color when the user is on the specific page */
+.nav-link:visited { 
+    color: #64748B;                                         /* Color of the text when user is on the page */
+} 
+/* Navigation Links color when hovered on */
+.nav-link:hover { 
+    background-color: #611f6e;                              /* Color of the background when hovered on */
+    color: #E2E8F0;                                         /* Color of the text when hovered on */
+} 
+/* Navigation Links color when focused on */
+.nav-link:focus { 
+    outline: 3px solid #881edf;                             /* Gives outline on link when focused on */
+    outline-offset: -3px; 
+    background-color: #8420b3;                              /* Color of the background when focused on */
+} 
+/* Gives design to link when active */
+.nav-link:active { 
+    background-color: #0B0F19;                              /* Color of the background when active */
+    transform: translateY(1px);                               /* Gives an effect when clicked */
+} 
+/* Gives design when the link is active and the user is on the page */
+.nav-link.active { 
+    background-color: #220e38;                              /* Color of the background when the user is active there */
+    border-bottom: 4px solid #42167c;                       /* Gives a line under the page when the page is active and the user is in the page */
+}  
