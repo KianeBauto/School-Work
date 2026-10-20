@@ -1,0 +1,17 @@
+main{
+    background-color:rgb(89, 21, 105);
+}
+.box{
+    background-color:rgb(151, 56, 240) ;
+    color:#411045;
+    font-size:2rem;
+    padding:0.5rem;
+}
+
+.container{
+    display:grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(4, 1fr);
+    gap:1em;
+}
