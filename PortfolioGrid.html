@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>  
+    <link rel="stylesheet" href="menu.css">
+   <style>
+    #links{
+        width: 100%;
+        display: block;
+        margin: 0;
+        color: #f7f7f8;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 12px;
+        border: 2px solid #220030;
+        text-align: center;
+        border-radius: 8px;
+        background-color: rgb(163, 4, 255);
+    }
+    .box{
+        color: rgb(121, 30, 226);
+        font-size: 0.7rem;
+        background-color: rgb(163, 4, 255);
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 15px;
+        max-width: 800px;
+        margin: 40px auto; 
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: whitesmoke;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        min-height: 100px;
+    }
+</style>
+    
+    </head>
+    <body>
+
+        <nav class="navbar" role="navigation" aria-label="Main Navigation"> 
+    <ul class="nav-list"> 
+    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li> 
+    <li class="nav-item"><a class="nav-link" href="About.html">About</a></li> 
+    <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li> 
+    <li class="nav-item"><a class="nav-link active" href="Portfolio.html">Portfolio</a></li> 
+    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li> 
+    </ul> 
+        </nav>
+        <main class="container">
+     <a href="TableCoding.html" id="links" class="box"><h3>Element Form</h3></a> 
+     <a href="PortalLogin.html" id="links" class="box"><h3>Portal Login</h3></a>  
+     <a href="Sample.html" id="links" class="box"><h3>JAVASCRIPT LOGS</h3></a>
+     <a href="DiscountCalculator.html" id="links" class="box"><h3>Discount Calculator</h3></a>  
+     <a href="DotNetFramework.html" id="links" class="box"><h3>DotNetFramework</h3></a>  
+     <a href="SchoolSchedule.html" id="links" class="box"><h3>Class Schedule</h3></a>
+     <a href="ClassScheduleStyle.html" id="links" class="box"><h3>Class Schedule Styled</h3></a>
+     <a href="Array.html" id="links" class="box"><h3>Student Array with Images</h3></a>
+     <a href="Grid.html" id="links" class="box"><h3>Grid Testing</h3></a>
+     <a href="LoginPage.html" id="links" class="box"><h3>Login Logic With Password</h3></a> 
+    </main>
+        </main>
+        
+    </body>
+</html>
