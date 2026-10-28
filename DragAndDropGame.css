@@ -1,0 +1,94 @@
+h1{
+    text-align: center;
+    color:green;
+}
+h4.water{
+    text-align: center;
+    color:rgb(0, 204, 255);
+}
+h4.food{
+    text-align: center;
+    color:rgb(194, 87, 0);
+}
+h4.toy{
+    text-align: center;
+    color:rgb(27, 134, 0);
+}
+h4.thing{
+    text-align: center;
+    color:rgb(187, 255, 0);
+}
+h2{
+    text-align: center;
+    color:black;
+}
+h3{
+    text-align: center;
+    color:gray
+}
+.drinks{
+    text-align: center;
+    border:1px solid rgb(26, 174, 233);
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.foods{
+    text-align: center;
+    border:1px solid rgb(61, 38, 8);
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.things{
+    text-align: center;
+    border:1px solid rgb(205, 226, 10);
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.toys{
+    text-align: center;
+    border:1px solid rgb(48, 214, 15);
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.box{
+    background-color: purple;
+    align-items: center;
+    justify-content:center;
+    height: 30px;
+    width: 120px;
+    margin-right:5px;
+    cursor:grab;
+}
+.droppableContainer{
+    text-align: center;
+    border: 1px solid rgb(255, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+
+}
+.droppable{
+    background-color:purple;
+    align-items: center;
+    justify-content:center;
+    height: 30px;
+    width: 120px;
+    margin-right:5px;
+}
+.draggableFormat{
+    font-weight: bold;
+    color:rgb(233, 98, 245);
+    border:5px dotted rgb(242, 114, 247);
+}
+h1{
+    color: rgb(0, 0, 0);
+}
