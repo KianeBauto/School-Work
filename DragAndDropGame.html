@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="DragAndDropGame.css">
-    <script src="DragAndDrop.js" defer></script>
+    <script src="DragAndDropGame.js" defer></script>
 
 </head>
 <body>
@@ -13,54 +13,55 @@
         <h1>The Sorting Game!!</h1>
         <h3>Sort Them Out To Their Specific Category</h3>
     </center>
+ <div class="scoreboard">Score: <span id="score-val">0</span></div>
 
-        <h4 class ="water">Drinks</h4>
-    <div class = "drinks">
-        <div class ="box" draggable="true" id="drinks">Milk</div>
-        <div class ="box" draggable="true" id="drinks">Cold Water</div>
-        <div class ="box" draggable="true" id="drinks">Juice</div>
-        <div class ="box" draggable="true" id="drinks">Water</div>
-        <div class ="box" draggable="true" id="drinks">Softdrinks</div>
-        <div class ="box" draggable="true" id="drinks">Sparkling Water</div>
-    </div>
+<h4 class="water">Consumables</h4>
+<div class="drinks">
+    <div class="box" draggable="true" id="item-milk" data-category="drinks">Milk</div>
+    <div class="box" draggable="true" id="item-water" data-category="drinks">Cold Water</div>
+    <div class="box" draggable="true" id="item-juice" data-category="drinks">Juice</div>
+    <div class="box" draggable="true" id="item-softdrinks" data-category="drinks">Softdrinks</div>
+</div>
 
-        <h4 class ="food">Foods</h4>
-    <div class = "foods">
-        <div class ="box" draggable="true" id="foods">Chicken</div>
-        <div class ="box" draggable="true" id="foods">Beef</div>
-        <div class ="box" draggable="true" id="foods">Hotdogs</div>
-        <div class ="box" draggable="true" id="foods">Bacon</div>
-        <div class ="box" draggable="true" id="foods">Shawarma</div>
-    </div>
+<h4 class="food">Consumables</h4>
+<div class="foods">
+    <div class="box" draggable="true" id="item-chicken" data-category="foods">Chicken</div>
+    <div class="box" draggable="true" id="item-bacon" data-category="foods">Bacon</div>
+    <div class="box" draggable="true" id="item-beef" data-category="foods">Beef</div>
+    <div class="box" draggable="true" id="item-hotdogs" data-category="foods">Hotdogs</div>
+</div>
 
-        <h4 class ="thing">Things</h4>
-    <div class = "things">
-        <div class ="box" draggable="true" id="things">Pencil</div>
-        <div class ="box" draggable="true" id="things">Pen</div>
-        <div class ="box" draggable="true" id="things">Eraser</div>
-        <div class ="box" draggable="true" id="things">Correction Tape</div>
-    </div>
+<h4 class="thing">Objects</h4>
+<div class="things">
+    <div class="box" draggable="true" id="item-eraser" data-category="things">Eraser</div>
+    <div class="box" draggable="true" id="item-correction" data-category="things">Correction Tape</div>
+    <div class="box" draggable="true" id="item-pencil" data-category="things">Pencil</div>
+    <div class="box" draggable="true" id="item-pen" data-category="things">Pen</div>
+</div>
 
-        <h4 class ="toy">Toys</h4>
-    <div class = "toys">
-        <div class ="box" draggable="true" id="toys">Dinosaur</div>
-        <div class ="box" draggable="true" id="toys">Plushie</div>
-        <div class ="box" draggable="true" id="toys">Rattle</div>
-        <div class ="box" draggable="true" id="toys">Squeaky Duck</div>
-    </div>
+<h4 class="toy">Entertainment</h4>
+<div class="toys">
+    <div class="box" draggable="true" id="item-Squeaky" data-category="toys">Squeaky Toy</div>
+    <div class="box" draggable="true" id="item-rattle" data-category="toys">Rattle Toy</div>
+    <div class="box" draggable="true" id="item-dinosaur" data-category="toys">Dinosaur</div>
+    <div class="box" draggable="true" id="item-plushie" data-category="toys">Plushie</div>
+</div>
 
-        <h2>Sort Them Here!!</h2>
+<h2>Sort Them Here!!</h2>
 
-        <div class = "droppableContainer">
-        <div class ="droppable"  data-draggable-id  id="box">Beverages</div>
-        <div class ="droppable"  data-draggable-id  id="box">Food</div>
-        <div class ="droppable"  data-draggable-id  id="box">Things</div>
-        <div class ="droppable"  data-draggable-id  id="box">Toys</div>
+<div class="droppableContainer">
+    <div class="droppable" data-category="drinks" id="drop-drinks">Beverages</div>
+    <div class="droppable" data-category="foods" id="drop-foods">Food</div>
+    <div class="droppable" data-category="things" id="drop-things">Things</div>
+    <div class="droppable" data-category="toys" id="drop-toys">Toys</div>
+</div>
 
 
-    </div>
+
 <center>
+    <br><button class="reset-btn" onclick="resetGame()">Reset Game</button><br>
     <a href="https://kianebauto.github.io/School-Work/PortfolioGrid.html">return to portfolio</a>
 </center>
+<p>Best suited for children ages 1 - 5</p>
 </body> 
 </html>
