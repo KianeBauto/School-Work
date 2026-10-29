@@ -3,20 +3,28 @@ h1{
     color:green;
 }
 h4.water{
+    text-shadow: rgb(0, 0, 0); offset:1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     color:rgb(0, 204, 255);
 }
 h4.food{
+    text-shadow: rgb(0, 0, 0); offset:1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     color:rgb(194, 87, 0);
 }
 h4.toy{
+    text-shadow: rgb(0, 0, 0); offset:1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     color:rgb(27, 134, 0);
 }
 h4.thing{
+    text-shadow: rgb(0, 0, 0); offset:1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    color:rgb(187, 255, 0);
+    color:rgb(148, 132, 132);
 }
 h2{
     text-align: center;
@@ -27,6 +35,7 @@ h3{
     color:gray
 }
 .drinks{
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     border:1px solid rgb(26, 174, 233);
     margin-bottom: 100px;
@@ -35,6 +44,7 @@ h3{
     justify-content:space-around;
 }
 .foods{
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     border:1px solid rgb(61, 38, 8);
     margin-bottom: 100px;
@@ -43,6 +53,7 @@ h3{
     justify-content:space-around;
 }
 .things{
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     border:1px solid rgb(205, 226, 10);
     margin-bottom: 100px;
@@ -51,6 +62,7 @@ h3{
     justify-content:space-around;
 }
 .toys{
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     border:1px solid rgb(48, 214, 15);
     margin-bottom: 100px;
@@ -59,10 +71,10 @@ h3{
     justify-content:space-around;
 }
 .box{
-    background-color: purple;
+    background-color: rgb(12, 250, 114);
     align-items: center;
     justify-content:center;
-    height: 30px;
+    height: 40px;
     width: 120px;
     margin-right:5px;
     cursor:grab;
@@ -77,17 +89,19 @@ h3{
 
 }
 .droppable{
-    background-color:purple;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(0, 151, 20);
     align-items: center;
     justify-content:center;
-    height: 30px;
+    height: 185px;
     width: 120px;
     margin-right:5px;
 }
 .draggableFormat{
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color:rgb(233, 98, 245);
-    border:5px dotted rgb(242, 114, 247);
+    color:rgb(2, 123, 52);
+    border:5px dotted rgb(1, 81, 32);
 }
 h1{
     color: rgb(0, 0, 0);
