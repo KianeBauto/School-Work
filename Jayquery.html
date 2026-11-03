@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src ="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+       
+</head>
+    
+    <script>
+//blur method
+ $(document).ready(function () {
+            $("#btn").click(function () {
+                $("input").blur();
+                $("p").html(
+                    "This is blur method that is used!!!");
+            });
+        });
+
+
+    //no hover = transparent   
+    $(document).ready(function () {
+            $("h1").hover(
+                function () {
+                    $(this).css(
+                        "color",
+                        "green"
+                    );
+                },
+                function () {
+                    $(this).css(
+                        "color",
+                        "aliceblue"
+                    );
+                }
+            );
+        });
+
+
+    //animated box 
+     $(document).ready(function () {
+                $("#b2").click(function () {
+                    $("#box").animate({
+                        width: "300px"
+                    });
+                    $("#box").animate({
+                        height: "500px"
+                    });
+                });
+            });
+
+
+            //slide up and down
+            $(document).ready(function () {
+                $(".btnu").click(function () {
+                    $("h2").slideUp();
+                });
+            });
+            $(document).ready(function () {
+                $(".btnd").click(function () {
+                    $("h2").slideDown();
+                });
+            });
+
+            //toggle method
+            $(document).ready(function() {
+            $(".bth").click(function() {
+                $("#gfg").toggle();
+            });
+            });
+
+</script>
+ <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        #b1 {
+            margin-top: 10px;
+        }
+
+        div {
+            width: 300px;
+            height: 100px;
+            padding: 20px;
+            border: 2px solid green;
+        }
+        #gfg {
+            color: green;
+            border: 5px solid black;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+<body>
+
+
+        <center>
+        <!--enter value and click on the button -->
+                    Enter Value:
+                <input type="text">
+                <br>
+                <button id="btn">start blur event!!!</button>
+
+
+                <p style="color:green"></p>
+
+                <br>
+                <h1>Class for Class</h1>
+                <br>
+
+             
+
+                <br>
+                 <div id="box"></div>
+                <!-- click on this button -->
+                <button id="b2">Click Here !</button>
+                <br><br>
+
+                
+                <div>
+                <h2>This paragraph will get hidden.</h2>
+                <!-- click on this button -->
+                <button class="btnu">Slide up</button>
+                <button class="btnd">Slide down</button>
+                </div>
+
+                <br><br>
+                <class id="gfg">GeeksforGeeks</class>
+                <br>
+                <button class = bth>Click to hide() and show() the text</button>
+        </center>
+
+</body>
+</html>
