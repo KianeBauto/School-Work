@@ -61,3 +61,100 @@
     background-color: #220e38;                              /* Color of the background when the user is active there */
     border-bottom: 4px solid #42167c;                       /* Gives a line under the page when the page is active and the user is in the page */
 }  
+
+
+
+.container { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; 
+    max-width: 1000px; 
+    margin: 40px auto; 
+    padding: 0 20px;
+}
+
+.links {
+    width: 200px; 
+    display: block;
+    color: #c46314;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    border: 2px solid #c55c16;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+
+.links:hover {
+    background-color: #fff4d1;  
+    border-color: #a34e0e;  
+}
+
+.links:hover h3 {
+    color: #121db9;     
+}
+
+.box {
+    color: rgb(54, 17, 155);
+    font-size: 0.7rem;
+    background-color: lightyellow;
+}
+.footer {
+    background-color: #e8f5e9; 
+    color: #311252;        
+    font-family: "Segoe UI", sans-serif;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 8%;
+    height: 190px;
+}
+
+.footer-text {
+    width: 50%;
+}
+
+.footer-text p {
+    margin: 10px 15px;
+    font-size: 12px;
+}
+
+.footer-social {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #220e38;           
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #471fb6;           
+}
+
+.footer-bottom {
+    background-color: #2e1236; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
