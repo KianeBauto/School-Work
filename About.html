@@ -5,7 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>  
     <link rel="stylesheet" href="Menu.css">
-    </head>
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #accordion-resizer {
+    padding: 10px;
+    width: 350px;
+    height: 350px;
+  }
+  
+  .ui-accordion-content{
+    color: rgb(112, 5, 145);
+    background-color: rgb(253, 253, 253);
+  }
+
+  .ui-accordion .ui-accordion-header{
+        background-color: rgb(107, 44, 150);
+    }
+
+
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+ 
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  } );
+  </script>
+</head>
     <body>
 
         <nav class="navbar" role="navigation" aria-label="Main Navigation"> 
@@ -20,6 +57,22 @@
         <center>
             <h1>About</h1>
         </center>
+        <div id="accordion-resizer" class="ui-widget-content">
+  <div id="accordion">
+    <h3 style="color: rgb(0, 0, 0);">My Hobbies</h3>
+    <div>
+      <p>1.Playing<br>2.Sleeping<br>3.Larping</p>
+    </div>
+    <h3 style="color: rgb(0, 0, 0);">My Favourite Music Artist</h3>
+    <div>
+      <p>1.Stomach Book<br>2.Glass Beach<br>3.Underscores<br>4.Femtanyl<br>5.Re-Logic<br>6.DM DOKURO<br>7.SunKissed Lola<br>8.Alex G</p>
+    </div>
+    <h3 style="color: rgb(0, 0, 0);">My Favourite Games</h3>
+    <div>
+      <p>1.Terraria<br>2.Minecraft<br>3.Roblox<br>4.HELLDIVERS 2<br>5.Metro<br>6.Dying Light<br>7.Trepang 2</p>
+    </div>
+  </div>
+</div>
        
            <footer class="footer">
       <div class="footer-content">
