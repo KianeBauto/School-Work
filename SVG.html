@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>SVG to HTML</title>
+    <link rel="stylesheet" 
+          href="style.css">
+</head>
+
+<body>
+    <div style="display: flex;
+                flex-direction: row;
+                justify-content: left; 
+                align-items: center;
+                height:100vh;">
+       
+        <p style="font-size: 20px">
+          SVG Circle
+          </p>
+
+    <svg width="200"
+             height="200" 
+             style="border: 2px solid black;">
+            <circle cx="95" 
+                    cy="95"
+                    r="70" 
+                    stroke="fuschia" 
+                    stroke-width="5" 
+                    fill="purple" />
+    </svg>
+        
+        <br>
+
+        <div style="display: flex;
+                flex-direction: row;
+                align-items: center;"
+        <p style = "font-size: 20px">Polygon</p>
+            <svg width="250"
+             height="250" 
+             style="border: 2px solid black;">
+    <polygon points="0, 100 200, 200 200, 100 200, -10000" 
+             fill="purple">
+    </svg>
+    
+
+    </div>
+
+        <br>
+    <p style ="font-size: 20px;">Rectangle</p>
+    <svg width="200"
+        height="200" 
+        style="border: 2px solid black;">
+        <rect width="150" height="100" style="
+            fill: rgb(91, 6, 139); 
+            stroke-width: 10;
+            stroke: rgb(121, 29, 196)" />
+    </svg>
+
+        <br>
+
+    <p style="font-size: 20px;">line</p>
+    <svg width="200"
+            height="200" 
+            style="border: 2px solid black;">            
+            <line x1="10" y1="10" x2="5000" y2="130" 
+            stroke="purple" stroke-width="3"
+            opacity="0.5"></line>  
+    </svg>
+
+        <br>
+
+        <p style="font-size: 20px;">Polyline</p>
+    <svg width="200px" height="200px" style="border: 2px solid black;">
+    <polyline points="100,150 10,250 180,17 50,100"
+              fill="purple" stroke="fuschia" 
+              stroke-width="5">
+    </svg><br>
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
