@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDrawing{
+            border:solid 3px rgb(0, 0, 0);
+        }
+
+        body {
+        margin: 0;
+        height: 100vh;
+        display: grid;
+        place-items: center; /* Centers on both X and Y axes */
+        background-color:antique white;
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <canvas height ="500" width="1000" id="myDrawing">
+
+    <script>
+        function draw20BlueCircles() {
+        for (let i = 0; i < 20; i++) {
+ // 1. Random X and Y position on the canvas
+            const x = Math.random() * canvas.width;
+            const y = Math.random() * canvas.height;
+ // 2. Random size (radius from 5px to 30px)
+            const radius = Math.random() * 5 + 1;
+ // 3. Random shade of blue
+            const hue = Math.floor(Math.random() * 360);
+            const lightness = Math.floor(Math.random() * 50) + 35;
+            ctx.fillStyle = "hsl(" + hue + ", 85%, " + lightness + "%)";
+ // 4. Draw the circle
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2);
+            ctx.fill();
+    }//end of for loop
+}//end fo function
+    </script>
+    </canvas>
+</body>
+</html>
