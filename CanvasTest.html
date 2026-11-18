@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+
+    <style>
+        #myDrawing{
+            border:solid 1px green;
+        }
+
+        body {
+        margin: 0;
+        height: 100vh;
+        display: grid;
+        place-items: center; /* Centers on both X and Y axes */
+        background-color:antique white;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <canvas height ="500" width="1000" id="myDrawing">
+
+    </canvas>
+
+
+    <script>
+        const canvas = document.getElementById("myDrawing");
+        const ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.moveTo(450, 200); // Move the pen to (30, 50)
+        ctx.lineTo(425,700);
+        ctx.lineTo(525,700);
+        ctx.lineTo(500,200);
+        ctx.fillStyle = '#964B00'; 
+        ctx.fill(); 
+        ctx.stroke(); // Render the path
+
+
+
+        ctx.beginPath();
+        ctx.moveTo(275,400);
+        ctx.lineTo(480,50);
+        ctx.lineTo(700,400);
+        ctx.lineTo(700,400);
+        ctx.fillStyle ='#228B22'
+        ctx.fill();
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.moveTo(400,180);
+        ctx.lineTo(565,180);
+        ctx.lineTo(565,180);
+        ctx.closePath();
+
+        ctx.strokeStyle = '#FFEA00';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.moveTo(360,250);
+        ctx.lineTo(565,180);
+        ctx.lineTo(565,180);
+        ctx.closePath();
+
+        ctx.strokeStyle = '#FFEA00';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+
+
+        ctx.beginPath();
+        ctx.moveTo(360,250);
+        ctx.lineTo(360,250);
+        ctx.lineTo(655,320);
+        ctx.strokeStyle ='#FFEA00';
+        ctx.lineWidth =2;
+        ctx.stroke();
+
+
+        ctx.beginPath();
+        ctx.moveTo(655,320);
+        ctx.lineTo(655,320);
+        ctx.lineTo(300,350);
+        ctx.strokeStyle ='#FFEA00';
+        ctx.lineWidth =2;
+        ctx.stroke();
+
+
+
+        ctx.beginPath(); // Starts a fresh path
+        ctx.arc(450, 250, 15, 0, Math.PI * 2);
+        ctx.strokeStyle ='#000000';
+        ctx.lineWidth =2;
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+// Circle 2
+        ctx.beginPath(); 
+        ctx.arc(500, 200, 15, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.arc(550, 300, 15, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.arc(375, 350, 15, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.arc(350, 275, 15, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.arc(400, 200, 15, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.arc(575, 200, 15, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.arc(510, 100, 15, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.arc(450, 120, 15, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.arc(475, 350, 15, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+
+        ctx.beginPath();
+        ctx.arc(650, 350, 15, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.fillStyle = '#DC143C'
+        ctx.fill();
+
+
+    
+    </script>
+</body>
+</html>
