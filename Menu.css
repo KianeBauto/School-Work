@@ -1,6 +1,7 @@
 /* Navigation Bar Color and Design */
     .navbar { 
-    background-color: #2e1236;                             /* Gives the background color to the bar  */
+    flex: 1 2 auto;
+    background-color: #6948ff;                             /* Gives the background color to the bar  */
     width: 100%;                                             /* Width of the navigation bar */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);              /* Adds shadow to the bar */
 } 
@@ -19,7 +20,7 @@
     .nav-link {  
     display: block;                                          /* Changes rendering block to block-level element */           
     padding: 14px 20px;                                      /* Padding inside of the link */ 
-    color: #94A3B8;                                        /* Color of the text */
+    color: #ffffff;                                        /* Color of the text */
     text-decoration: none;                                   /* Removes the underline below the hyperlink */
     font-family: 'Segoe UI', sans-serif;                     /* Fonts used for the text */
     font-size: 15px;                                         /* Size of the font */
@@ -28,38 +29,38 @@
 }
 /* Navigation Link cursor hover */
     .nav-link:hover { 
-    background-color: #611f6e;                              /* Color of the background when hovered over */
-    color: #E2E8F0;                                         /* Color of the text when hovered on */
+    background-color: #6948ff;                              /* Color of the background when hovered over */
+    color: #000000;                                         /* Color of the text when hovered on */
 }
 
 /* Changes the Navigation Link when it is active */
 .nav-link:link { 
-    color: #94A3B8;                                         /* Color of the text when the link is active */
+    color: #ffffff;                                         /* Color of the text when the link is active */
 }
 /* Changes the color when the user is on the specific page */
 .nav-link:visited { 
-    color: #64748B;                                         /* Color of the text when user is on the page */
+    color: #ffffff;                                         /* Color of the text when user is on the page */
 } 
 /* Navigation Links color when hovered on */
 .nav-link:hover { 
-    background-color: #611f6e;                              /* Color of the background when hovered on */
-    color: #E2E8F0;                                         /* Color of the text when hovered on */
+    background-color: #6948ff;                              /* Color of the background when hovered on */
+    color: #666666;                                         /* Color of the text when hovered on */
 } 
 /* Navigation Links color when focused on */
 .nav-link:focus { 
-    outline: 3px solid #881edf;                             /* Gives outline on link when focused on */
+    outline: 3px solid #5430f5;                             /* Gives outline on link when focused on */
     outline-offset: -3px; 
-    background-color: #8420b3;                              /* Color of the background when focused on */
+    background-color: #5527ff;                              /* Color of the background when focused on */
 } 
 /* Gives design to link when active */
 .nav-link:active { 
-    background-color: #0B0F19;                              /* Color of the background when active */
+    background-color: #6948ff;                              /* Color of the background when active */
     transform: translateY(1px);                               /* Gives an effect when clicked */
 } 
 /* Gives design when the link is active and the user is on the page */
 .nav-link.active { 
-    background-color: #220e38;                              /* Color of the background when the user is active there */
-    border-bottom: 4px solid #42167c;                       /* Gives a line under the page when the page is active and the user is in the page */
+    background-color: #6948ff;                              /* Color of the background when the user is active there */
+    border-bottom: 4px solid #6948ff;                       /* Gives a line under the page when the page is active and the user is in the page */
 }  
 
 
@@ -98,13 +99,13 @@
 }
 
 .box {
-    color: rgb(54, 17, 155);
+    color: #6948ff;
     font-size: 0.7rem;
     background-color: lightyellow;
 }
 .footer {
     background-color: #e8f5e9; 
-    color: #311252;        
+    color: #6948ff;        
     font-family: "Segoe UI", sans-serif;
     bottom: 0;
     position: absolute;
@@ -141,20 +142,22 @@
 }
 
 .social-links a {
-    color: #220e38;           
+    color: #6948ff;           
     font-size: 25px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .social-links a:hover {
-    color: #471fb6;           
+    color: #6948ff;           
 }
 
 .footer-bottom {
-    background-color: #2e1236; 
+    background-color: #6948ff; 
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 12px;
 }
+
+
