@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery Page</title>  
-    <link rel="stylesheet" href="Menu.css">
+    <link rel="stylesheet" href="menu.css">
     </head>
     <body>
 
@@ -13,35 +13,103 @@
     <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li> 
     <li class="nav-item"><a class="nav-link" href="About.html">About</a></li> 
     <li class="nav-item"><a class="nav-link active" href="Gallery.html">Gallery</a></li> 
-    <li class="nav-item"><a class="nav-link" href="PortfolioGrid.html">Portfolio</a></li> 
+    <li class="nav-item"><a class="nav-link" href="Portfolio.html">Portfolio</a></li> 
     <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li> 
     </ul> 
         </nav>
         <center>
             <h1> Gallery</h1>
         </center>
-    
-           <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-text">
-          <h3>Stay Connected!</h3>
-          <p>
-            "Welcome to my website page!,<br> Social links are on the right side and be sure to reach out via email if there are any questions that you want to ask me.<br> Thank you!"  
-          </p>
-        </div>
+         <div class="carousel" id="carousel">
+        <div class="slides">
+          <figure class="slide">
+            <img src="images/Me.jpg" alt="Describe image 1" />
+            <figcaption>Me Sleeping</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="images/FortniteToken.jpg" alt="Describe image 1" />
+            <figcaption>My Dream That I Can Never Reach</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="images/Oneshot.jpg" alt="Describe image 1" />
+            <figcaption>My Favourite Indie Game</figcaption>
+          </figure>
+          
+         
 
-        <div class="footer-social">
-          <h3>Available In These Social Apps!</h3>
-          <div class="social-links">
-            <a href="https://www.facebook.com/">f</a>
-            <a href="https://www.youtube.com/">▶</a>
-            <a href="https://www.x.com/">X</a>
-          </div>
+
+          <button
+            class="aside prev"
+            type="button"
+            aria-label="Previous slide"
+          >
+            &#10094;
+          </button>
+
+          <button class="aside next" type="button" aria-label="Next slide">
+            &#10095;
+          </button>
         </div>
+        <div class="dots"></div>
       </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      const $carousel = $("#carousel");
+      const $slides = $carousel.find(".slide");
+      const $dotsBox = $carousel.find(".dots");
+      const total = $slides.length;
+      const FADE_TIME = 500;
+      const DELAY = 4000;
+      let current = 0;
+      let timer = null;
 
-      <div class="footer-bottom">
-        <p><i>©2026 All rights Reserved | Designed by : Kiane Carlo S Bauto</i></p>
+      $slides.hide().eq(0).show();
 
+      $slides.each(function (i) {
+        $("<button>")
+          .attr({ type: "button", "aria-label": "Go to slide " + (i + 1) })
+          .addClass("dot" + (i === 0 ? " active" : ""))
+          .data("index", i)
+          .appendTo($dotsBox);
+      });
+      const $dots = $dotsBox.find(".dot");
+
+      function showSlide(index) {
+        if (index === current) return;
+        $slides.eq(current).stop(true, true).fadeOut(FADE_TIME);
+        $slides.eq(index).stop(true, true).fadeIn(FADE_TIME);
+        $dots.removeClass("active").eq(index).addClass("active");
+        current = index;
+      }
+      function nextSlide() { showSlide((current + 1) % total); }
+      function prevSlide() { showSlide((current - 1 + total) % total); }
+
+      $carousel.on("click", ".next", nextSlide);
+      $carousel.on("click", ".prev", prevSlide);
+      $dotsBox.on("click", ".dot", function () {
+        showSlide($(this).data("index"));
+      });
+
+      function startAutoplay() {
+        stopAutoplay();
+        timer = setInterval(nextSlide, DELAY);
+      }
+      function stopAutoplay() {
+        clearInterval(timer);
+      }
+      $carousel.on("mouseenter", stopAutoplay)
+        .on("mouseleave", startAutoplay);
+      startAutoplay();
+
+      $(document).on("keydown", function (event) {
+        if (event.key === "ArrowRight") {
+          nextSlide();
+        } else if (event.key === "ArrowLeft") {
+          prevSlide();
+        }
+      });
+    });
+  </script>
     </body>
 </html>
