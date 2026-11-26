@@ -271,3 +271,9 @@
     z-index: -1;       /* Puts image behind text */
     pointer-events: none;
   }
+
+  .sit{
+    height: 50px;
+    width: 50px;
+    float: auto;
+  }
